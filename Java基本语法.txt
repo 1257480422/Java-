@@ -42,19 +42,23 @@ double: 双精度(精确到后14位)
 
 /*
     循环结构2：
-    while、do while、 
-
+    while、do while、 switch(30min)
+    $$$对比break 和 continue
+    break可以用于switch和循环结构中(跳出循环模块)
+    continue用在循环结构中(跳过本次循环剩下的部分)
+    
+    return作用：1.返回方法的返回值     2.终止当前程序
 
 */
 
+
 public class Date{
     static int d;//在类内 有默认值
-    public static void main(string[] args){
+    public static void main(string[] args){   
+    
             //在方法内 无默认值
             int c;
-            
-            
-            
+         
     }
     
 }
