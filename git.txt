@@ -1,0 +1,94 @@
+工作区->(add)暂存区->(commit)本地库
+
+//笔记软件 GitNote - 基于Git的跨平台笔记软件
+//设置姓名 邮箱
+git config --global user.name/email "内容"
+//初始化本地仓库
+git init
+
+
+//将文件加入到暂存区中
+git add 文件名
+//将暂存区的内容提交到本地库
+git commit -m "上传文件的备注" 文件名
+//文件必须放在仓库文件中才可以操作 添加->上传
+
+
+//常用命令
+git status 可以查看 暂存区和工作区的文件
+
+
+//查看日志  
+git log
+//日志的多种展示方式
+git log --pretty=oneline //每个日志在一行 
+git log --oneline //把索引简化 
+git reflog //显示指针层数 HEAD@{数字} 回到该历史版本要走多少步
+
+
+//版本的前进和回退
+git reset --hard +需要到的版本索引号
+hard          同时移动
+mixed参数     本地库和暂存区同时移动  工作区不动
+soft 参数     本地库移动的同时别的两个区不动 
+
+
+//删除文件和找回
+rm 文件名  只删除工作区的文件
+删除后必须上传到本地库  add commit
+找回本地库中删除的文件 就是用前进和回退的操作即可！！！
+
+//文件的对比
+git diff 文件名 可以对比工作区和暂存区的不同
+不加文件名时 比较的是所有文件的差异
+
+//分支
+主分支     master
+创建分支 branch
+git branch -v              查看所有的分支
+git branch 分支名称        创建新的分支
+git checkout 分支名称      切换分支
+git merge +要合并的分支名  在要合并的主分支上进行操作
+
+
+//git 本地 云端互联
+查看本地全部别名
+git remote -v
+设置一个库的别名
+git remote add 别名 库的链接
+//项目推送
+git push 库名 分支名(master)
+
+//库的克(从库中下载到本地)
+git clone 库的链接
+
+//项目的拉取操作
+1.先抓取
+git fetch 别名(库名) 分支名(例如master) //抓取后本地文件不发生改变
+抓取后可以进入源程库进行查看 再进行更新
+git checkout 库名/分支  cat 文件名  显示内容
+2.合并操作(合并前必须切回本地库 git checkout 分支名)
+git merge 库名/分支
+fetch+merge 更加保险
+或者选择 git pull直接拉取 库名 分支名
+解决冲突之后上传文件 
+git commit -m " " 后面不需要文件名 ！！！！
+
+ssh免密
+cd ~
+ssh-keygen -t rsa -C  +账号
+把生成的ssh.pub文件复制
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCAbF6fgGUM/
+6kCMlVOdua9OXKnOKPAI0Z6fAQStEudj8rx7UMKgIjZd7hWJgqQ387qUAiFUPsdVS8rgkV5CgXrpwINI53swYtDeO
+4m4Qm3sOmdkHYYhXxYcGpkeFVROoZJcbw9cynoqDxTShr2ktnNfs8H47o9Nl4xKrynaESQyyEuLpniT02eO5VjUcMj/fl+
+/dR4r7krh4AwSrQ6rWVu5cQcg4gOef+F/mDyPBCJmXBY9TnQ/RqsaWORf9jKhh6jm7V0lYeQOqHYPh35x2zGk86kfIGQVGS
+j+f5o4ZGIm3mhJsjvSsSJIro5hqR9hTy9voA2Cz8EIS858afUl2X+A+AyDKlmx7alZM8fIQdrFuhP/dd063/B6MngApNbMR
+7icBb/ynThNJ5diDe1oocJiZMa8ZeUkzD8dhqw0Yrez2orXjr4ktM8RJNg15ASD84/RIoGeBesVGmatePPsn3TvKE9+RV7T
+/JMxUHgJXF66oCcKNZ8NaxZoE0Olii63E= 1257480422@qq.com
+
+
+
+
+
+
+
