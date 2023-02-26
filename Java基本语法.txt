@@ -52,6 +52,7 @@ double: 双精度(精确到后14位)
 */
 
 3-3
+/*
 递归，数组，排序(网站 visualgo)
   数组经常考的排序算法：
        1.写出某种排序算法：冒泡 选择 快速
@@ -60,10 +61,31 @@ double: 双精度(精确到后14位)
        
        3.排序算法的稳定性：
        排序之后的值和排序之前的值位置是否发生改变
-
-
-
-
+   二位数组
+    定义二位数组的时候一定要注意 必须给定数组的长度
+    int[]   arr=new int[6];
+    int[] [] arr2=new int[3][];//前面必须要赋值(3) 后面可以不用
+    //二位数组的定义
+    arr2[0]=new int[2];
+    arr2[1]=new int[3];
+    arr2[2]=new int[3];
+     
+    arr2[0][0]=1;     
+    arr2[0][1]=2;
+    arr2[1][0]=4; 
+    arr2[1][1]=5;
+    arr2[1][2]=6;
+    arr2[2][0]=7;
+    arr2[2][1]=8;
+    arr2[2][2]=9;
+    for(int i=0;i<arr2.length;i++){
+        for(int j=0;j<arr2.length;j++){
+            System.out.print(arr2[i][j]+"\t");
+        }
+        System.out.println();
+    }
+    
+*/
 
 public class Date{
     static int d;//在类内 有默认值
