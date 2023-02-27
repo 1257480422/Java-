@@ -87,6 +87,81 @@ double: 双精度(精确到后14位)
     
 */
 
+//Java面向对象
+/*
+OOP：object oriented programming
+类(class)(抽象)（一类东西）和对象（具体的一类东西）
+类可以生成对象 类是对象的抽象
+方法：对象执行的操作  (在java中没有函数 只有方法)
+对象：用来表述客观事物的一个实体，由一组属性和方法构成
+在java中必须把东西写道类里面 public class.....
+*** 类是对象的一个抽象  对象是类的实例化
+例子：一只狗
+属性
+颜色：白色
+方法
+吃，跑，叫
+
+psvm=public static void main()
+属性：语法
+[访问修饰符](可以省略) [属性类型]  [属性名称]=[默认值]
+public class Stadent{
+    int staNumber；
+    String name；
+    
+}
+
+方法类型(main 也算方法类型)：语法
+[访问修饰符](可以省)    返回值类型   方法名称{
+        逻辑代码
+} 
+void study(){
+System.out.println("   ");
+}
+*** 一个java文件中可以定义N多个java文件
+但是只能有有一个public class并且public class的类名跟文件名保持一致
+*/
+
+/*
+//对象的创建和使用
+例子：
+public class Student{
+    //属性的定义
+    int stuNumber；
+    String name;
+    int age=20;
+    //定义的方法
+    void study{
+        System.out.println("111");
+    }
+    void eat(String food){
+        System.out.println("我在吃"+food);
+    }
+    public static void main(String[] args){
+        //创建对象
+        Student student=new Student();
+        //使用属性
+        System.out.println(Student.name);
+        System.out.println(Student.age);
+        System.out.println(Student.stuNumber);
+         //修改属性值，或者给属性赋值
+         student.name="张三";
+         student.age=40;
+         student.staNumber=20221114130；
+            System.out.println(Student.name);
+            System.out.println(Student.age);
+            System.out.println(Student.stuNumber);
+
+        //调用方法
+        student.study();//直接打印内容
+        student.eat(foof:"apple");//必须传参给方法
+    }
+}
+
+*/
+
+
+
 public class Date{
     static int d;//在类内 有默认值
     public static void main(string[] args){   
