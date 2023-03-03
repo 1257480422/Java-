@@ -87,8 +87,12 @@ double: 双精度(精确到后14位)
     
 */
 
-//Java面向对象
+//Java面向对象1
 /*
+https://blog.csdn.net/u010611510/article/details/122368635?ops_request_misc=&request_id=&biz_id=102&utm_term=java%E4%B8%AD%E5%AF%B9%E8%B1%A1%20%E7%B1%BB%20%E5%B1%9E%E6%80%A7&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-122368635.142^v73^insert_down1,201^v4^add_ask,239^v2^insert_chatgpt&spm=1018.2226.3001.4187
+
+https://blog.csdn.net/m0_63793462/article/details/128572069?spm=1001.2101.3001.6650.2&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128572069-blog-122368635.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-2-128572069-blog-122368635.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=5
+
 OOP：object oriented programming
 类(class)(抽象)（一类东西）和对象（具体的一类东西）
 类可以生成对象 类是对象的抽象
@@ -118,6 +122,8 @@ public class Stadent{
 void study(){
 System.out.println("   ");
 }
+
+public class NEW 
 *** 一个java文件中可以定义N多个java文件
 但是只能有有一个public class并且public class的类名跟文件名保持一致
 */
@@ -157,6 +163,19 @@ public class Student{
         student.eat(foof:"apple");//必须传参给方法
     }
 }
+
+*/
+
+//java面向对象2 
+/*
+局部变量：定义在方法中的变量 
+public void show(){
+    int a=10;//局部变量
+}
+
+成员变量：类内的变量叫做成员变量（全局变量）
+
+引用类型：类、接口、数组
 
 */
 
