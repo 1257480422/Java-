@@ -177,6 +177,34 @@ public void show(){
 
 引用类型：类、接口、数组
 
+this 关键字：表示当前对象的指针
+    指向当前对象，表示当前对象的引用
+用处：
+    1.构造方法，当前构造方法中的参数名称跟类的成员变量名称一样
+    的时候，可以使用this代表当前对象
+    2.普通方法中
+    当多个普通方法之间需要调用的时候，可以使用this来进行调用，
+    指的是当前对象的其他方法
+    3.成员变量的使用：
+    当方法中的参数名称跟成员变量保持一致的时候，使用this变量名称
+    表示的是对象的值 
+    
+    
+static 关键字：表示修饰成员变量的时候，表示静态成员变量或者叫类变量
+                普通变量在使用的时候，必须要通过对象进行调用
+                类变量或者静态变量可以使用对象名调用可以使用类名调用
+                
+public class StaticDemo{
+    String name="zhangsan";
+    static int age=10;
+}
+StaticDemo staticDemo=new StaticDemo;
+    //使用对象进行调用时
+    System.out.println(staticDemo.name);
+    System.out.println(staticDemo.age);
+    //使用类名调用
+    System.out.println(StaticDemo.age);
+    
 */
 
 
